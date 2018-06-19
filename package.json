@@ -4,7 +4,9 @@
   "description": "SmoreBot JS is the JavaScript bot written in Discord.js and Node.js it is designed to have music and server prefixes with custom settings per guild! Version 2 is the SmoreJS rewrite with migration onto the Discord.js-Commando framework.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -37,10 +39,12 @@
     "request": "^2.81.0",
     "simple-youtube-api": "^2.1.0",
     "sqlite": "^2.8.0",
-    "sqlite3": "^3.1.8",
+    "sqlite3": "^4.0.0",
     "superagent": "^3.5.2",
     "twit": "^2.2.9",
     "uws": "^0.14.5",
-    "ytdl-core": "^0.14.4"
-  }
+    "ytdl-core": "^0.14.4",
+    "snyk": "^1.83.0"
+  },
+  "snyk": true
 }
